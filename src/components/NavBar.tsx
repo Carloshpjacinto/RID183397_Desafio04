@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
 
     .linksNav:first-child{
 
-        margin-left: 25rem;
+        margin-left: 45rem;
     }
 
     .linksGitLinke{
@@ -50,9 +50,7 @@ function NavBar(){
                     <a className="linksGitLinke" href="https://www.linkedin.com/in/carlos-henrique-parreira-jacinto-1962b0179/"><img src={LogoLinkedin} alt="Logo Linkedin" /></a>
                 </div>
             </div>
-
         </StyledNav>
-
     )
 }
 
