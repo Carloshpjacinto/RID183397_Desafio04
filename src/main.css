@@ -21,6 +21,11 @@ body{
     display: flex;
 }
 
+.d-grid{
+
+    display: grid;
+}
+
 .jc-between{
 
     justify-content: space-between;
