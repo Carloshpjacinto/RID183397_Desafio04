@@ -1,39 +1,30 @@
 import styled from "styled-components";
 
-import { ListTechnologies } from "@/resources";
+import { ListTechnologies, TituloH2 } from "@/resources";
 
 import { StyledButton } from '@/components'
 
 const StyledHeader = styled.header`
-    
-    .headerCss{
-
-       margin: 20rem 0rem 0rem 20rem;
-    }
 
     .titleHeader{
 
-        font-size: 6.4rem;
-        font-weight: 600;
+        margin: 25rem 0rem 5rem 0rem;
 
-        cursor: default;
-
-        margin: 0rem 0rem 2.5rem 0rem
     }
 
     .listTechnologies{
 
         grid-template-columns: repeat(4, 1fr);
         gap: 4.5rem;
-        margin: 0rem 0rem 10rem 0rem;
+        margin: 0rem 0rem 9.5rem 2.5rem;
     }
 
     .paragraphHeader{
 
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 600;
 
-        margin: 0rem 0rem 0rem 4rem;
+        margin: 0rem 0rem 0rem 5rem;
 
         cursor: default;
     }
@@ -58,7 +49,7 @@ function Header(){
     return(
         <StyledHeader>
             <div className="headerCss">
-                <h1 className="titleHeader">Tecnologias</h1>
+                <TituloH2 className="titleHeader" children="Tecnologias"/>
 
                 <div className="d-grid listTechnologies">
                     {

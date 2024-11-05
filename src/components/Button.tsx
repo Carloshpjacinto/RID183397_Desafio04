@@ -29,6 +29,8 @@ export const StyledButton = styled.button<
             font-size: 2rem;
             width: 20rem;
             height: 6rem;
+
+            margin-left: 2.5rem;
         }
 
         &.buttonCard:hover{

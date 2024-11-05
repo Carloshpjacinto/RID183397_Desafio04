@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
 
     .linksNav:first-child{
 
-        margin-left: 45rem;
+        margin-left: 30rem;
     }
 
     .linksGitLinke{
@@ -24,11 +24,6 @@ const StyledNav = styled.nav`
         height: 3.2rem;
         margin-left: 2rem;
         cursor: pointer;
-    }
-
-    .linksGitLinke:last-child{
-
-        margin-right: 20rem
     }
 
 `
