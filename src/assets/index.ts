@@ -1,2 +1,6 @@
 export {default as LogoGitHub} from './imgGitHub.svg'
 export {default as LogoLinkedin} from './imgLinkedin.svg'
+export {default as ProjetoArquitetura} from './imgProjetoArquitetura.png'
+export {default as ProjetoBlog} from './imgProjetoBlog.png'
+export {default as ProjetoBootcamp} from './imgProjetoBootcamp.png'
+export {default as ProjetoLanding} from './imgProjetoLanding.png'
