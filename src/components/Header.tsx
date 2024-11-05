@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import { ListTechnologies } from "@/resources";
 
+import { StyledButton } from '@/components'
+
 const StyledHeader = styled.header`
     
     .headerCss{
@@ -23,6 +25,7 @@ const StyledHeader = styled.header`
 
         grid-template-columns: repeat(4, 1fr);
         gap: 4.5rem;
+        margin: 0rem 0rem 10rem 0rem;
     }
 
     .paragraphHeader{
@@ -43,6 +46,11 @@ const StyledHeader = styled.header`
         margin-right: 1.5rem;
     }
 
+    .buttonPosition{
+
+        margin: 0rem 0rem 0rem 5.5rem;
+    }
+
 `
 
 function Header(){
@@ -60,6 +68,8 @@ function Header(){
                         ))
                     }
                 </div>
+
+                <StyledButton className="buttonHeader buttonPosition" children="Saber mais"/>
             </div>
         </StyledHeader>
 
