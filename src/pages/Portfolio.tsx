@@ -1,4 +1,4 @@
-import { NavBar, Header } from "@/components"
+import { NavBar, Header, Card } from "@/components"
 
 function Portfolio() {
 
@@ -7,6 +7,8 @@ function Portfolio() {
         <NavBar />
 
         <Header />
+
+        <Card />
       </>
     )
   }

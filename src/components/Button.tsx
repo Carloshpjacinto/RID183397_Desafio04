@@ -4,8 +4,6 @@ export const StyledButton = styled.button<
     React.ButtonHTMLAttributes<HTMLButtonElement>
 >`
         font-family: "Poppins", sans-serif;
-        width: 28.0rem;
-        height: 8rem;
         border-radius: 83rem;
         background: linear-gradient(280deg, #13ADC7, #6978D1,#945DD6);
         border: 0rem;
@@ -16,6 +14,8 @@ export const StyledButton = styled.button<
         &.buttonHeader{
 
             font-size: 2.8rem;
+            width: 28rem;
+            height: 8rem;
         }
 
         &.buttonHeader:hover{
@@ -27,6 +27,8 @@ export const StyledButton = styled.button<
         &.buttonCard{
 
             font-size: 2rem;
+            width: 20rem;
+            height: 6rem;
         }
 
         &.buttonCard:hover{

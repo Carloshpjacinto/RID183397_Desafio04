@@ -29,4 +29,16 @@ body{
 .jc-between{
 
     justify-content: space-between;
+
+}
+
+.fd-column{
+
+    flex-direction: column;
+}
+
+.al-center{
+
+    align-items: center;
+
 }
