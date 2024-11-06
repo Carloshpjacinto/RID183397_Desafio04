@@ -35,14 +35,14 @@ function NavBar(){
         <StyledNav>
             <div className="d-flex jc-between">
                 <div>
-                    <a className="linksNav" href="">Projetos</a>
-                    <a className="linksNav" href="">Tecnologias</a>
-                    <a className="linksNav" href="">Sobre mim</a>
+                    <a className="linksNav" href="#Projeto">Projetos</a>
+                    <a className="linksNav" href="#Card">Tecnologias</a>
+                    <a className="linksNav" href="#SobreMim">Sobre mim</a>
                 </div>
 
                 <div>
-                    <a className="linksGitLinke" href="https://github.com/Carloshpjacinto"><img src={LogoGitHub} alt="Logo GitHub" /></a>
-                    <a className="linksGitLinke" href="https://www.linkedin.com/in/carlos-henrique-parreira-jacinto-1962b0179/"><img src={LogoLinkedin} alt="Logo Linkedin" /></a>
+                    <a className="linksGitLinke" href="https://github.com/Carloshpjacinto" target="_blank"><img src={LogoGitHub} alt="Logo GitHub" /></a>
+                    <a className="linksGitLinke" href="https://www.linkedin.com/in/carlos-henrique-parreira-jacinto-1962b0179/" target="_blank"><img src={LogoLinkedin} alt="Logo Linkedin" /></a>
                 </div>
             </div>
         </StyledNav>

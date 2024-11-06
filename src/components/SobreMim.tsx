@@ -3,7 +3,7 @@ import { ListaLinhaDoTempo, TituloH2 } from "@/resources";
 
 const StyledSobreMim = styled.div`
 
-    margin-bottom: 50rem;
+    margin-bottom: 55rem;
 
     .linhaDoTempo{
 
@@ -54,7 +54,7 @@ const StyledSobreMim = styled.div`
 function SobreMim(){
 
     return(
-        <StyledSobreMim>
+        <StyledSobreMim id="SobreMim">
             <TituloH2 children="Sobre mim" />
             <div className="linhaDoTempo d-flex jc-between ">
                 {

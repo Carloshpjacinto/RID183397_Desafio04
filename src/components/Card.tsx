@@ -45,7 +45,7 @@ const StyledCard = styled.div`
 function Card(){
 
     return(
-        <StyledCard>
+        <StyledCard id="Projeto">
             <TituloH2 className="tituloCard" children="Projetos" />
             <div className="d-grid sessaoCard">
                 {
@@ -56,7 +56,7 @@ function Card(){
                                 <h2 className="textoProjeto">{listaProjetos.nome}</h2>
                             </div>
                             <p className="paragrafoCard">{listaProjetos.textoParagrafo}</p>
-                            <a href={listaProjetos.linkProjeto}><StyledButton className="buttonCard" children="Clique aqui"/></a>
+                            <a href={listaProjetos.linkProjeto} target="_blank"><StyledButton className="buttonCard" children="Clique aqui"/></a>
                         </div>
                     ))
                 }
