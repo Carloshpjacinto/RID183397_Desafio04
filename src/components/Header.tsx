@@ -6,17 +6,11 @@ import { StyledButton } from '@/components'
 
 const StyledHeader = styled.header`
 
-    .titleHeader{
-
-        margin: 25rem 0rem 5rem 0rem;
-
-    }
-
     .listTechnologies{
 
         grid-template-columns: repeat(4, 1fr);
         gap: 4.5rem;
-        margin: 0rem 0rem 9.5rem 2.5rem;
+        margin: 5.5rem 0rem 9.5rem 2.5rem;
     }
 
     .paragraphHeader{

@@ -4,11 +4,6 @@ import { StyledButton } from "./Button";
 
 const StyledCard = styled.div`
 
-    .tituloCard{
-
-        margin: 15rem 0rem 2rem 0rem;
-    }
-
     .sessaoCard{
 
         grid-template-columns: repeat(2, 1fr);
