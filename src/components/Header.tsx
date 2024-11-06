@@ -41,7 +41,7 @@ const StyledHeader = styled.header`
 function Header(){
 
     return(
-        <StyledHeader>
+        <StyledHeader id="Card">
             <div className="headerCss">
                 <TituloH2 className="titleHeader" children="Tecnologias"/>
 
@@ -54,7 +54,7 @@ function Header(){
                     }
                 </div>
 
-                <StyledButton className="buttonHeader buttonPosition" children="Saber mais"/>
+                <a href="https://softdesign.com.br/blog/dicionario-de-tecnologias-para-web/" target="_blank"><StyledButton className="buttonHeader buttonPosition" children="Saber mais"/></a>
             </div>
         </StyledHeader>
 
