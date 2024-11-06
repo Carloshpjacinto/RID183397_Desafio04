@@ -3,12 +3,14 @@ import { ListaLinhaDoTempo, TituloH2 } from "@/resources";
 
 const StyledSobreMim = styled.div`
 
+    margin-bottom: 50rem;
+
     .linhaDoTempo{
 
         width: 1320px;
         height: 1.2rem;
         background: white;
-        margin: 15rem 0rem 10rem 7.5rem;
+        margin: 15rem 0rem 0rem 7.5rem;
         border-radius: 50rem;
         text-align: center;
         
