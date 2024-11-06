@@ -31,6 +31,12 @@ body{
 
 }
 
+.jc-around{
+
+    justify-content: space-around;
+
+}
+
 .fd-column{
 
     flex-direction: column;
@@ -39,5 +45,6 @@ body{
 .al-center{
 
     align-items: center;
+    text-align: center;
 
 }
