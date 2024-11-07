@@ -13,7 +13,6 @@ const StyledSobreMim = styled.div`
         margin: 15rem 0rem 0rem 7.5rem;
         border-radius: 50rem;
         text-align: center;
-        
     }
 
     .marcadorDaLinha{
@@ -33,14 +32,15 @@ const StyledSobreMim = styled.div`
         margin: -1rem 0rem 0rem 0rem
     }
 
-    h3{
+    .dataLinhaDoTempo{
 
         display:flex;
         margin: -5rem;
         font-size: 3.6rem;
     }
 
-    p{
+    .paragrafoLinhaDoTempo{
+
         display: flex;
         position: absolute;
         margin: 5.5rem 0rem 0rem 0rem;
@@ -55,14 +55,18 @@ function SobreMim(){
 
     return(
         <StyledSobreMim id="SobreMim">
+
             <TituloH2 children="Sobre mim" />
+
             <div className="linhaDoTempo d-flex jc-between ">
                 {
                     ListaLinhaDoTempo.map((linhaDoTempo) => (
                         <div className="posicao">
-                            <h3>{linhaDoTempo.data}</h3>
+                            <h3 className="dataLinhaDoTempo" >{linhaDoTempo.data}</h3>
+
                             <div className="marcadorDaLinha"></div>
-                            <p>{linhaDoTempo.historia}</p>
+                            
+                            <p className="paragrafoLinhaDoTempo">{linhaDoTempo.historia}</p>
                         </div>    
                     ))
                 }

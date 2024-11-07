@@ -41,12 +41,6 @@ p{
 
 }
 
-.jc-around{
-
-    justify-content: space-around;
-
-}
-
 .fd-column{
 
     flex-direction: column;
