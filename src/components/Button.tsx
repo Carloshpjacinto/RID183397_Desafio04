@@ -11,20 +11,21 @@ export const StyledButton = styled.button<
         font-weight: 600;
         cursor: pointer;
 
-        &.buttonHeader{
+        &.botaoHeader{
 
             font-size: 2.8rem;
             width: 28rem;
             height: 8rem;
+            margin: 0rem 0rem 0rem 5.5rem;
         }
 
-        &.buttonHeader:hover{
+        &.botaoHeader:hover{
 
             box-shadow: .2rem .2rem 2.5rem #6978D1;
             transition-duration: 0.5s;
         }
 
-        &.buttonCard{
+        &.botaoCard{
 
             font-size: 2rem;
             width: 20rem;
@@ -33,7 +34,7 @@ export const StyledButton = styled.button<
             margin-left: 2.5rem;
         }
 
-        &.buttonCard:hover{
+        &.botaoCard:hover{
 
             box-shadow: .2rem .2rem 2.5rem #6978D1;
             transition-duration: 0.5s;

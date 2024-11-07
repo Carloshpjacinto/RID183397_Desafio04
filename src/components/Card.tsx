@@ -15,7 +15,7 @@ const StyledCard = styled.div`
 
         width: 55rem;
         height: 70rem;
-        border: .1rem solid #0F1624;
+        border: none;
         border-top-left-radius: 5rem;
         border-bottom-right-radius: 5rem;
         margin: 10rem 0rem 0rem 10rem;
@@ -27,7 +27,6 @@ const StyledCard = styled.div`
         width: 50rem;
         height: 26.6rem;
         border-radius: .8rem;
-
         margin: 3rem 0rem 0rem 0rem;
     }
 
@@ -43,7 +42,7 @@ const StyledCard = styled.div`
         margin: 2rem 0rem 4rem 0rem
     }
 
-    .Like{
+    .botaoLike{
 
         background: none;
         border: none;
@@ -51,39 +50,36 @@ const StyledCard = styled.div`
         margin: 0;
     }
 
-    .like2{
+    .likeImg{
 
         width: 5.5rem;
         height: 5.5rem;
-
         margin-right: 5.5rem;
-
         cursor:pointer;
     }
-
 `
 
 function Card(){
+    
+    const [ProjetoFavorito, setProjetoFavorito] = useState<number[]>([])
 
-    const [favProjects, setFavProject] = useState<number[]>([])
+    const SalvarProjetos:any = (id:number) => {
 
-    const handleSavedProjecs:any = (id:number) => {
+        setProjetoFavorito((ListaProjetos) => {
 
-        setFavProject((prevFavProjects) => {
+            if(ListaProjetos.includes(id)){
 
-            if(prevFavProjects.includes(id)){
+                const filterArray:any = ListaProjetos.filter((projetoId) => projetoId !== id)
 
-                const filterArray:any = prevFavProjects.filter((projectId) => projectId !== id)
+                sessionStorage.setItem("ProjetoFavorito", JSON.stringify(filterArray))
 
-                sessionStorage.setItem("favProjects", JSON.stringify(filterArray))
-
-                return prevFavProjects.filter((projectId) => projectId !== id)
+                return ListaProjetos.filter((projetoId) => projetoId !== id)
 
             }else{
 
-                sessionStorage.setItem("favProjects", JSON.stringify([...prevFavProjects, id]))
+                sessionStorage.setItem("ProjetoFavorito", JSON.stringify([...ListaProjetos, id]))
 
-                return [...prevFavProjects, id]
+                return [...ListaProjetos, id]
 
             }
         })
@@ -91,15 +87,14 @@ function Card(){
 
     useEffect(() => {
 
-        const savedFavProjects = sessionStorage.getItem("favProjects");
+        const salvarProjetoFavorito = sessionStorage.getItem("ProjetoFavorito");
     
-        if (savedFavProjects) {
-            setFavProject(JSON.parse(savedFavProjects));
+        if (salvarProjetoFavorito) {
+            setProjetoFavorito(JSON.parse(salvarProjetoFavorito));
         }
     }, []);
 
     return(
-
         <StyledCard id="Projeto">
 
             <TituloH2 className="tituloCard" children="Projetos" />
@@ -116,14 +111,13 @@ function Card(){
                                 <h2 className="textoProjeto">{listaProjetos.nome}</h2>
 
                             </div>
+                
                             <p className="paragrafoCard">{listaProjetos.textoParagrafo}</p>
                             
                             <div className="d-flex al-center jc-between">
+                                <a href={listaProjetos.linkProjeto} target="_blank"><StyledButton className="botaoCard" children="Clique aqui"/></a>
 
-                                <a href={listaProjetos.linkProjeto} target="_blank"><StyledButton className="buttonCard" children="Clique aqui"/></a>
-
-                                <button className="Like" onClick={() => handleSavedProjecs(listaProjetos.id)}><img className="like2" src={favProjects.includes(listaProjetos.id) ? LikeCurtido : LikeNaoCurtido} alt="" /></button>
-
+                                <button className="botaoLike" onClick={() => SalvarProjetos(listaProjetos.id)}><img className="likeImg" src={ProjetoFavorito.includes(listaProjetos.id) ? LikeCurtido : LikeNaoCurtido} alt="LIKE" /></button>
                             </div>
                         </div>
                     ))
