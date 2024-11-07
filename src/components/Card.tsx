@@ -3,6 +3,7 @@ import { ListImgProjetos, TituloH2 } from "@/resources";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { StyledButton } from "./Button";
+import { TamanhoResponsivo } from "@/utils";
 
 const StyledCard = styled.div`
 
@@ -56,6 +57,15 @@ const StyledCard = styled.div`
         height: 5.5rem;
         margin-right: 5.5rem;
         cursor:pointer;
+    }
+
+    @media ${TamanhoResponsivo.laptop}{
+
+        .sessaoCard{
+
+            grid-template-columns: repeat(1, 1fr);
+        }
+
     }
 `
 

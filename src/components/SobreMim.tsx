@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ListaLinhaDoTempo, TituloH2 } from "@/resources";
+import { TamanhoResponsivo } from "@/utils";
 
 const StyledSobreMim = styled.div`
 
@@ -49,6 +50,24 @@ const StyledSobreMim = styled.div`
         font-size: 2.8rem;
     }
 
+    @media ${TamanhoResponsivo.laptop}{
+
+        margin-bottom: 50rem;
+
+        .linhaDoTempo{
+
+            width: 75.5rem;
+            margin: 10rem 0rem 0rem 5.5rem;
+        }
+
+        .paragrafoLinhaDoTempo{
+
+            margin: 5.5rem 0rem 0rem 0rem;
+            width: 15rem;
+            height: 15rem;
+            font-size: 1.7rem;
+        }
+    }
 `
 
 function SobreMim(){
