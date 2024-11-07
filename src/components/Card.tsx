@@ -32,14 +32,14 @@ const StyledCard = styled.div`
 
     .paragrafoCard{
 
-        font-size: 2.8rem;
-        margin: 0rem 0rem 3rem 3rem
+        font-size: 2.5rem;
+        margin: 0rem 3rem 3rem 3rem
     }
 
     .textoProjeto{
 
         font-size: 3.6rem;
-        margin: 2rem 0rem 4rem 0rem
+        margin: 2rem 0rem 2.5rem 0rem
     }
 
     .botaoLike{
